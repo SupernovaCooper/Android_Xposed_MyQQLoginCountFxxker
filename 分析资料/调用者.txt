@@ -1,0 +1,33 @@
+
+    /* renamed from: a  reason: collision with other field name */
+    List<SimpleAccount> f28869a;
+
+
+
+    /* renamed from: b  reason: collision with other field name */
+    View.OnClickListener f28874b = new View.OnClickListener() {
+        /* class com.tencent.mobileqq.activity.AccountManageActivity.AnonymousClass19 */
+
+        public void onClick(View view) {
+            if (QLog.isColorLevel()) {
+                QLog.d("Switch_Account", 2, "add account");
+            }
+            if (AccountManageActivity.this.m9148a()) {
+                if (AccountManageActivity.this.f28869a == null || AccountManageActivity.this.f28869a.size() - 1 < 8) {
+                    AccountManageActivity.this.f28891f = ((ISubAccountControllUtil) QRoute.api(ISubAccountControllUtil.class)).isAnyAccountBind(AccountManageActivity.this.app);
+                    Intent intent = new Intent();
+                    intent.setPackage(AccountManageActivity.this.getPackageName());
+                    intent.setClass(AccountManageActivity.this, AddAccountActivity.class);
+                    AccountManageActivity.this.startActivityForResult(intent, 1000);
+                    AccountManageActivity.this.overridePendingTransition(R.anim.a3, R.anim.w);
+                    ((ISubAccountAssistantForward) QRoute.api(ISubAccountAssistantForward.class)).doSomethingBeforeAddAccount(AccountManageActivity.this.app, AccountManageActivity.this);
+                    ReportController.b(AccountManageActivity.this.app, "CliOper", "", "", "Setting_tab", "Clk_acc_add", 0, 0, "", "", "", "");
+                    ReportController.a(AccountManageActivity.this.app, "0X800B837");
+                } else {
+                    QQToast.a(AccountManageActivity.this, (int) R.string.c6a, 0).m23756a();
+                }
+            }
+            EventCollector.getInstance().onViewClicked(view);
+        }
+    };
+

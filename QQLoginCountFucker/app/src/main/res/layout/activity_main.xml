@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:text="本插件用于解除QQ登录数量限制，方便切换多个小号。\n\n仅支持从 “设置”-“账号管理”-“添加或注册” 登录多个账号\n\n原版QQ仅支持8个账号的登录切换，多了就不行，奇了个怪，为什么要这么限制？
+        \n\n从前网络很单纯，有账号密码就可以登录，自从出了垃圾微信后，有账号密码就不让登录了，QQ跟着不学好，给用户增加操作成本的事情倒是都学来了，换个手机必须验证，验证你妹啊？！小号本身就用的少，不用可能被回收，登录吧又只能登录8个，要么多开QQ，要么删除之前的账号。而且手机经常刷机，指纹信息就变了，再次登录又要验证，烦死了！！！所以干脆做个插件，有多少登录多少，也不用双开或者多开了。配合虚拟机，做个备份，不管换啥手机小号都可以直接登录，完美~~~~" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:text="可能有时效性，已经尽力确保兼容性，但是可能也是徒劳。基于QQ8.6.0制作" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:autoLink="web"
+        android:text="本插件为开源作品，源码：https://github.com/SupernovaCooper/Android_Xposed_MyQQLoginCountFxxker" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="By Cooper 21.03.31" />
+</LinearLayout>
